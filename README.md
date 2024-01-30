@@ -1,4 +1,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![status workflow test](https://github.com/cirebon-dev/TelegramSDK/actions/workflows/python-app.yml/badge.svg)](https://github.com/cirebon-dev/TelegramSDK/actions) 
+[![status workflow build](https://github.com/cirebon-dev/TelegramSDK/actions/workflows/release_to_pypi.yml/badge.svg)](https://github.com/cirebon-dev/TelegramSDK/actions)
+[![Downloads](https://static.pepy.tech/badge/TelSDK)](https://pepy.tech/project/TelSDK)
 
 # TelegramSDK
 

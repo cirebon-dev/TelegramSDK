@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "telegramsdk"
+version = "0.1.0"
+description = "Synchronous Telegram bot SDK for python 2 & 3"
+authors = ["guangrei"]
+license = "mit"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+zcache = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+black = "^24.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

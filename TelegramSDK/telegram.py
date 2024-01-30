@@ -92,7 +92,7 @@ class telegram(TelegramSDK):
 
     def reply_file(path, **kwargs):
         """
-        Use this method to quick reply with document.
+        Use this method to quick reply with file.
         """
         kwargs["chat_id"] = telegram.data.message.chat.id
         kwargs["document"] = path
