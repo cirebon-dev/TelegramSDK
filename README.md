@@ -3,37 +3,7 @@
 [![status workflow build](https://github.com/cirebon-dev/TelegramSDK/actions/workflows/release_to_pypi.yml/badge.svg)](https://github.com/cirebon-dev/TelegramSDK/actions)
 [![Downloads](https://static.pepy.tech/badge/TelSDK)](https://pepy.tech/project/TelSDK)
 
-# TelegramSDK
-
-There are already many telegram bot libraries for Python, but I wrote my own version according to my expectations
-
-- Compatible with any python version (2 & 3).
-
-- Allow multiprocessing.
-
-- Easy to use.
-
-- etc
-
-Not all telegram bot api methods are implemented yet and you are welcome to contribute :)
-
-## Installation
-
-> Note: If you are running an older version of Python, you must first install a version of the requests library that is compatible with your current Python version.
-
-
-with pip:
-```
-pip install TelSDK
-```
-with poetry:
-```
-poetry add TelSDK
-```
-from source:
-```
-python setup.py install
-```
+Simple Telegram BOT library.
 
 ## Example Usage
 

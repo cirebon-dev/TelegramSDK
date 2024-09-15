@@ -18,6 +18,7 @@ class telegram(TelegramSDK):
     this is class high level, for low level section see TelegramSDK.py
     author: guangrei.
     """
+    cacheobject = None
 
     def update(data):
         """
@@ -210,7 +211,10 @@ class telegram(TelegramSDK):
         data = telegram.data
         id = str(data.message._from.id)
         chat_id = str(data.message.chat.id)
-        c = Cache(path=database)
+        if telegram.cacheobject is not None:
+            c = telegram.cacheobject
+        else:
+            c = Cache(path=database)
         if not c.has(id):
             data = data.message._from
             data["session_" + chat_id] = value
@@ -224,7 +228,7 @@ class telegram(TelegramSDK):
         """
         Function get_session based user id and chat id.
         Args:
-            database (str, optional): Zcache database path. Default to database.json.
+            - database (str, optional): Zcache database path. Default to database.json.
         Returns:
             - Any: session value if exists.
             - None: if session not exists.
@@ -233,7 +237,10 @@ class telegram(TelegramSDK):
         data = telegram.data
         id = str(data.message._from.id)
         chat_id = str(data.message.chat.id)
-        c = Cache(path=database)
+        if telegram.cacheobject is not None:
+            c = telegram.cacheobject
+        else:
+            c = Cache(path=database)
         if not c.has(id):
             return None
         else:

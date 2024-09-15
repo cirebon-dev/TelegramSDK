@@ -9,8 +9,8 @@ with open(path.join(this_directory, "README.md")) as f:
     long_description = f.read()
 setup(
     name="TelSDK",
-    version="v0.1.1",
-    description="Synchronous Telegram bot SDK for python 2 & 3",
+    version="v0.1.2",
+    description="Simple Telegram bot library",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="guangrei",
